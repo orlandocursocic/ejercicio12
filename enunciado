@@ -1,0 +1,11 @@
+Una pagina html con el body vacio, sin embargo quiere:
+	1. Que cuando se vea la pagina aparezca un boton en el que ponga Hola
+	2. Cuando presione en el boton, que visualmente aparezca por debajo del
+		body "Hola Juan Antonio" y cada vez que le da lo vuelva a poner
+		en una nueva linea
+	3. Hay un segundo boton que cuando se pulsa provoca que desaparezcan
+		todos los juan antonio y aparece un formulario en el que pone
+		Nombre: (Text Box)
+		Apellido: (Text Box)
+		(Boton Aceptar)
+	4. Hacer un post con ajax con los datos
