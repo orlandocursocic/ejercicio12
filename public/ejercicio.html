@@ -4,11 +4,23 @@
 <head>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
         <script src=''></script>
-        <script>$(document).ready(function(){
+        <script>
+		$(document).ready(function(){
         	$("body").append("<button id='holabutton'>Hola</button>");
-            $("#holabutton").click(function(){
-            	$("body").append("<p>Hola Mundo</p>");
-                });
+			$("body").append("<button id='borrarbutton'>Borrar y Formulario</button>");
+            
+			var formulario = "<form class='datos'>Nombre:<br><input type='text' name='nombre'><br>Apellidos:<br><input type='text' name='apellidos'><br><br><input type='submit' value='Enviar'></form>";
+			
+			//Listeners
+			$("#holabutton").on('click', function(){
+            	$("body").append("<p class='parrafo'>Hola Mundo</p>");
+            });
+				
+			$("#borrarbutton").on('click', function(){
+            	$(".parrafo").remove();
+				$(".datos").remove();
+				$("body").append(formulario);
+            });
         });
         </script>
 </head>
@@ -18,4 +30,3 @@
 </body>
 
 </html>
-
